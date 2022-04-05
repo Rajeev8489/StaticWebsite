@@ -124,8 +124,9 @@ const Footer = () => {
                                         className='footerAddress'
                                         direction="row">
                                         <EmailIcon />
-                                        <Typography variant="body2">
-                                             suppport@simpluris.com
+                                        <Typography variant="body2" className='footerEmail'>
+                                             <a href='mailTo:suppport@simpluris.com'>
+                                                  suppport@simpluris.com</a>
                                         </Typography>
                                    </Stack>
                                    <Stack

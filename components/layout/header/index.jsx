@@ -9,7 +9,7 @@ import { styled } from "@mui/system";
 import { useRouter as UseRouter } from "next/router";
 import Navbar from './navbar';
 import SideDrawer from './sideDrawer';
-import NxtImage from '../../controls/nxtimage';
+import NxtImage from '../../controls/nxtImage';
 import logo from '../../../images/logo.png'
 
 

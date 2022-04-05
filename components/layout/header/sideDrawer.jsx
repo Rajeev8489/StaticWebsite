@@ -18,7 +18,6 @@ const SideDrawer = ({ navLinks }) => {
           ) {
                return;
           }
-
           setState({ ...state, [anchor]: open });
      };
 
@@ -29,7 +28,6 @@ const SideDrawer = ({ navLinks }) => {
                onClick={toggleDrawer(anchor, false)}
                onKeyDown={toggleDrawer(anchor, false)}
           >
-
                {navLinks.map(({ title, path, label }, i) => (
                     <Typography
                          variannt="button"

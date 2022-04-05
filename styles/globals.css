@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  /* background-color: #f5f5f5; */
+  background-color: #f5f5f5;
   font-family: Roboto,-apple-system, BlinkMacSystemFont, Segoe UI,  Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   
@@ -45,8 +45,8 @@ a {
 .footerLink{
   font-size: small;
   text-decoration: none;
-     color: #ffffff;
-     padding-left: 20px;
+  color: #ffffff;
+  padding-left: 20px;
 }
 
 .footerLink:hover{
@@ -55,4 +55,54 @@ a {
 
 .footerAddress{
   padding-left: 20px;
+}
+
+.footerEmail:hover{
+  text-decoration: underline;
+}
+
+.formTitle{
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.formSubtitle{
+  font-size: 10px;
+  padding-left: 20px;
+   color: #8b8383;
+}
+
+.companyAddress{
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.formContainer{
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formButton{
+  align-self: center;
+  width: '50%'
+}
+
+.formpageContent{
+  /* margin: 10px; */
+  padding: 25px;
+}
+
+.formpageContent .MuiFormControl-root{
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  
+}
+
+.formpageContent .formpageInputLabel{
+   margin-left: 10%;
+   color: #333333;
+   font-size: 12px;
+   font-weight: bolder;
 }

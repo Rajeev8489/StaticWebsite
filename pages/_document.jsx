@@ -24,7 +24,6 @@ export default class MyDocument extends Document {
           );
      }
 }
-MyDocument.displayName = 'MyDocument';
 
 MyDocument.getInitialProps = async (ctx) => {
 

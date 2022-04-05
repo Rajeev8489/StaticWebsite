@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from '@mui/material';
 import Head from 'next/head';
-import NxtImage from '../components/controls/nxtimage';
-import homebackground from '../images/homebackground.jpg';
+import NxtImage from '../components/controls/nxtImage';
+import homebackground from '../images/background1.jpg';
 
 
 export default function Home() {
@@ -12,7 +12,6 @@ export default function Home() {
       </Head>
         <Box>
         <NxtImage
-        sx={{  opacity: 0.7 }}
           src={homebackground}
           width="180"
           height="80"
