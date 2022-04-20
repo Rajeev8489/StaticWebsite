@@ -1,10 +1,9 @@
-import { Paper, Typography } from '@mui/material'
+import { Card, Paper, Typography } from '@mui/material'
 import React from 'react'
 
 export default function CompanyAddress() {
     return (
-        <div>
-            <Paper sx={{paddingTop:'10px'}}>
+            <Card sx={{paddingTop:'10px'}}>
             <Typography gutterBottom variant="body1" className='footerAddress'>
             Address:
         </Typography>
@@ -23,7 +22,6 @@ export default function CompanyAddress() {
             <Typography gutterBottom variant="body2" className='footerAddress'>
                 India
             </Typography>
-            </Paper>
-        </div>
+            </Card>
     )
 }

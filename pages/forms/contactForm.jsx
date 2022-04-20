@@ -59,13 +59,11 @@ export default function Contactform() {
     handleInputChange
   } = UseForm(initialFormValues, true, validate);
 
-
   const handleSubmit = e => {
     e.preventDefault()
     if (validate()) {
       recaptchaRef.current.execute();
       setSubmitting(true)
-      // window.alert(JSON.stringify(formValues));
     }
   }
   const email = formValues.email;
@@ -76,12 +74,16 @@ export default function Contactform() {
     try {
       const response = await fetch("/api/register", {
         method: "POST",
-        body: JSON.stringify({ email , captcha: captchaCode }),
+        body: JSON.stringify({ email, captcha: captchaCode }),
         headers: {
           "Content-Type": "application/json",
         },
       });
       if (response.ok) {
+        fetch('/api/contact', {
+          method: 'post',
+          body: JSON.stringify(formValues),
+        });
         alert("Message Sent");
         setFormValues(initialFormValues);
       }
@@ -121,7 +123,6 @@ export default function Contactform() {
             required={false}
             value={formValues.phoneNumber}
             onChange={handleInputChange}
-            error={errors.phoneNumber}
           />
           <Input
             name='subject'
